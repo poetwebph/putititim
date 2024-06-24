@@ -1,28 +1,41 @@
-let slideIndex = 0;
-showSlides();
+document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  const totalSlides = slides.length;
 
-function showSlides() {
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
+  let currentSlideIndex = 0;
 
-  // Hide all slides
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  function showSlide(index) {
+    // Ensure index is within bounds
+    currentSlideIndex = (index + totalSlides) % totalSlides;
+
+    // Hide all slides
+    slides.forEach((slide) => {
+      slide.classList.remove('active');
+    });
+
+    // Show the selected slide
+    slides[currentSlideIndex].classList.add('active');
+
+    // Update active dot
+    dots.forEach((dot) => dot.classList.remove('active'));
+    dots[currentSlideIndex].classList.add('active');
   }
 
-  // Reset active dot styles
-  for (let i = 0; i < dots.length; i++) {
-    dots[i].classList.remove("active");
+  function setSlideOnClick() {
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        showSlide(index);
+      });
+    });
   }
 
-  // Increment slideIndex and wrap around if necessary
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1 }
+  // Initial setup
+  showSlide(0);
+  setSlideOnClick();
 
-  // Display the current slide and set active dot
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].classList.add("active");
-
-  // Auto slide every 3 seconds
-  setTimeout(showSlides, 3000); // Change image every 3 seconds
-}
+  // Auto play slides every 3 seconds
+  setInterval(() => {
+    showSlide(currentSlideIndex + 1);
+  }, 3000);
+});

@@ -91,7 +91,7 @@ p{font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida San
   
   .slide img {
     margin: auto;
-    width: 300px;
+    width: 250px;
     align-content: center;
     text-align: center;
     border-radius: 10px;
@@ -102,7 +102,7 @@ p{font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida San
   
   .dots-container {
     position: absolute;
-    bottom:60px;
+    bottom:95px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -285,7 +285,7 @@ margin-top: 3px;
         display: block; /* Remove extra space beneath image */
         border-radius: 8px;
         width: 100px;
-       margin-right: 140px;
+       margin-right: 150px;
        margin-top:5px ;
       }
       .box5 h2 {
@@ -297,7 +297,7 @@ margin-top: 3px;
         padding-left: px;
         padding-right: px;
         border-radius: 5px;
-        margin-right: 30px;
+        margin-right: 40px;
         margin-top: -10px;
         margin-left:-10px ;
          }

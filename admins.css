@@ -98,10 +98,10 @@ main{
               }
               
               .carousel-item img {
-                border-width: 8px;
+                border-width: 5px;
                 border-style:ridge;
                 margin: auto;
-                  width: 250px;
+                  width: 180px;
                   display:block;
               }
               

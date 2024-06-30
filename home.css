@@ -313,3 +313,28 @@ margin-top: 3px;
           border-radius: 10px;
           background-color: white;
           color: rgb(0, 0, 0);}
+          .carousel {
+            margin: auto;
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+        }
+        
+        .carousel-inner {
+          margin: auto;
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .carousel-item {
+          margin: auto;
+            min-width: 100%;
+            position: relative;
+        }
+        
+        .carousel-item img {
+          margin: auto;
+            width: 160px;
+            display:block;
+        }

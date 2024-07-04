@@ -4,6 +4,7 @@ const slideCount = document.querySelectorAll('.carousel-item').length;
 
 function showSlide(index) {
     const slides = document.querySelectorAll('.carousel-item');
+    const videos = document.querySelectorAll('.carousel-item video');
 
     // Reset intervalId to prevent multiple timers running simultaneously
     clearInterval(intervalId);
@@ -20,16 +21,22 @@ function showSlide(index) {
         slide.classList.remove('active');
         if (i === currentIndex) {
             slide.classList.add('active');
+            const video = slide.querySelector('video');
+            if (video) {
+                video.play();
+                video.addEventListener('ended', nextSlide);
+            }
+        } else {
+            const video = slide.querySelector('video');
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+                video.removeEventListener('ended', nextSlide);
+            }
         }
     });
 
     document.querySelector('.carousel-inner').style.transform = `translateX(-${currentIndex * 100}%)`;
-
-    // Automatically transition to the next slide every 3 seconds (adjust as needed)
-    intervalId = setInterval(() => {
-        currentIndex = (currentIndex + 1) % slideCount;
-        showSlide(currentIndex);
-    }, 3000); // Change slide every 3 seconds (example)
 }
 
 function nextSlide() {

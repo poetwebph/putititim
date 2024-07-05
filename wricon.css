@@ -14,10 +14,12 @@ img{display: block;
 margin: auto;
 }
 h1{
-    color: rgb(0, 0, 0);
-    text-align: center;
-    background-color: white;
-    margin-top: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-style:groove;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  margin-top: 5px;
    }
 p{color: rgb(255, 255, 255);
     text-align: center;
@@ -41,7 +43,7 @@ a:link {
   } 
   .nav ul{
     list-style: none;
-    background-color: hsl(0, 4%, 15%);
+    background-color: hsl(0, 0%, 0%);
     padding: 0px;
     margin: 0px;
     text-align: center;
@@ -52,6 +54,9 @@ a:link {
     text-align: center;
 }
 .nav a{
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
     color: white;
     font-family: monospace;
     text-decoration: none;

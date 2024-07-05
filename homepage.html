@@ -5,47 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="homepage.css">
 </head>
 <body>
-    
-    </body>
-
-<img src="photos/pt.jpg" alt=""
-    height="80vh" width="85">
-
+</head>
+<body>
+    <div class="header">
     <h1>PUTI'T ITIM</h1>
-
-    <nav class="nav">
-        <ul>
-            <li><a href="poem.html">POEMS</a></li>
-            <li><a href="admins.html">ADMINS</a></li>
-            <li><a href="wricon.html">WRICON</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-        </ul>
-    </nav>
-
+    <img src="photos/pt.jpg">
+    </div>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="poem.html">Poems</a></li>
+      <li><a href="about.html">Admins</a></li>
+      <li><a href="wricon.html">Wricon</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <ul>
+      <li><a href="#"></a></li>
+      <li class="hideOnMobile"><a href="poem.html">Poems</a></li>
+      <li class="hideOnMobile"><a href="admins.html">Admins</a></li>
+      <li class="hideOnMobile"><a href="wricon.html">Wricon</a></li>
+      <li class="hideOnMobile"><a href="about.html">About</a></li>
+      <div class="menu">
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+      </div>
+    </ul>
+  </nav>
+  <br>
     <main>
     <h2>WELCOME TO PUTI'T ITIM</h2>
+    <br>
     <p style="font-family: 'Courier New', Courier, monospace; font-size: small;">check out our videos:</p>
     <div class="carousel">
       <div class="carousel-inner">
           <div class="carousel-item active">
-              <video src="photos/rens2.mp4" autoplay controls >
+              <video src="photos/rens2.mp4" autoplay >
               <div class="overlay"><span style="color: rgb(255, 255, 255); font-family:initial;">Karl Jazmeer Tobias / Eliseya</span>
                 <span style="font-family: monospace;"></span>
               </div>
           </div>
           <div class="carousel-item">
-              <video src="photos/rens.mp4" controls>
+              <video src="photos/rens.mp4" >
               <div class="overlay"><span style="color: rgb(255, 255, 255); font-family:initial;">Jerselyn Soriano / cbz</span>
                 <span style="font-family: monospace;"></span></div>
           </div>
       </div>
     </div>
       <hr>
+      <br>
+      <h3>#AtinAngWestPhilippineSea</h3>
+      <br>
         <p style="color: rgb(255, 255, 255); font-family: m;">Despite the tensions in the West Philippine Sea between China and the Philippines, Filipinos stand firm in defending our sovereignty. We refuse to be mocked or belittled and will safeguard our territory against any threats to our national integrity and security.</p>
-<h3>#AtinAngWestPhilippineSea</h3>
+        <br>
 <div class="slideshow-container">
   <div class="slideshow">
     <div class="slide">
@@ -65,64 +78,10 @@
   </div>
 </div>
 <p style="color: rgb(255, 255, 255); font-family: m;">Despite the tensions in the West Philippine Sea between China and the Philippines, Filipinos stand firm in defending our sovereignty. We refuse to be mocked or belittled and will safeguard our territory against any threats to our national integrity and security.</p>
-<hr>
-<div class="more-pages">
-<div class="mp">
-  <p>MORE PAGES TO EXPLORE</p>
-</div>
-<div class="container">
-  <div class="box">
-      <h2>DNKNUAIPTTIW...</h2>
-      <a href="https://www.facebook.com/mgatulasatissuengjetsandpats">
-      <img src="photos/t2.jpg" alt="Image 1" width="500px" class="clickable-image">
-      </a>
-  </div>
-  <div class="box">
-      <h2>LIKOD KWARTO</h2>
-      <a href="https://www.facebook.com/profile.php?id=100089847993340">
-      <img src="photos/t1.jpg" alt="Image 2" width="500px" class="clickable-image">
-      </a>
-  </div>
-</div>
-<br>
-<div class="container2">
-  <div class="box2">
-      <h2>ESTRANGHERONG DI 
-TUGMA</h2>
-      <a href="https://www.facebook.com/mgatulasatissuengjetsandpats">
-      <img src="photos/t4.jpg" alt="Image 1" width="500px" class="clickable-image">
-      </a>
-  </div>
-  <div class="box3">
-      <h2>KUYA ELMERS
-ANG MGA..</h2>
-      <a href="https://www.facebook.com/profile.php?id=100089847993340">
-      <img src="photos/t3.jpg" alt="Image 2" width="500px" class="clickable-image">
-      </a>
-  </div>
-</div>
-<br>
-<div class="container3">
-  <div class="box4">
-      <h2>TULA AT LUHA.</h2>
-      <a href="https://www.facebook.com/profile.php?id=100091882719756">
-      <img src="photos/t6.jpg" alt="Image 1" width="500px" class="clickable-image">
-      </a>
-  </div>
-  <div class="box5">
-      <h2>
-        MGA 
-GUSTONG IPARATING...</h2>
-      <a href="https://www.facebook.com/profile.php?id=100087654399479&mibextid=qi2Omg&rdid=WMDUma2G3zlaPejj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FWwAcpgnAiKnCT5hD%2F%3Fmibextid%3Dqi2Omg">
-      <img src="photos/t5.jpg" alt="Image 2" width="500px" class="clickable-image">
-      </a>
-  </div>
-</div>
-<br>
-<br>
 <br>
 <hr>
 <br>
+
 VISIT OUR FACEBOOK PAGE :<BR>
 <br>
 <a href="https://www.facebook.com/profile.php?id=100091532721979">Facebook Page Link</a>
@@ -137,6 +96,7 @@ VISIT OUR FACEBOOK PAGE :<BR>
     <script src="homepage.js"></script>
     <script src="home.js"></script>
     <script src="homepage2.js"></script>
+    <script src="homepage3.js"></script>
   </div>
 </body>
 </html>
